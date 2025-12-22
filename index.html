@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="not-ready overflow-y-scroll lg:text-base" lang="en">
+
+
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Zola" />
+  <title>Home</title>
+  <meta property="og:site_name" content="Home" />
+  <meta property="og:title" content="Home" />
+  <meta name="description" content="Cheney&apos;s personal website" />
+  <meta property="og:description" content="Cheney&apos;s personal website" />
+  <meta property="og:url" content="https://zhangcheney.github.io/" />
+  <link rel="canonical" href="https://zhangcheney.github.io/" />
+  <meta property="og:type" content="website" />
+  <link rel="alternate" type="application/atom+xml" href="https://zhangcheney.github.io/atom.xml" title="Home | Atom" />
+
+  <meta name="theme-color" data-light="#e4e4e7" data-dark="#27272a" content="#e4e4e7" />
+  <link rel="preload stylesheet" as="style" href="https://zhangcheney.github.io/main.min.css?h=6307f37f300cb97b2b5a" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --header: #e4e4e7;
+      color-scheme: light;
+    }
+    :root.dark {
+      --bg: #18181b;
+      --header: #27272a;
+      color-scheme: dark;
+    }/**/
+  </style>
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="https://zhangcheney.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://zhangcheney.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="https://zhangcheney.github.io/android-icon.png" />
+  <script src="https://zhangcheney.github.io/js/linkita.min.js?h=2cfe69bc508021cbd3c5"></script>
+  <script src="https://zhangcheney.github.io/js/linkita-search.min.js?h=698547b4b081d012c661"></script>
+
+  <!-- Head inject -->
+  <link rel="stylesheet" href="/css/custom.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  referrerpolicy="no-referrer"
+/>
+
+
+
+<style>
+  .icon-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.45rem;
+    padding:0.35rem 0.6rem;
+    border:1px solid rgba(97,117,137,0.45);
+    border-radius:5px;
+    text-decoration:none;
+    color:inherit;
+    line-height:1;
+  }
+
+  .icon-btn i{
+    opacity: 0.8;          /* lighter icon */
+  }
+  .icon-btn span{
+    font-size: 11pt;        /* 2pt smaller than your 12pt text */
+  }
+
+  .icon-btn:hover{
+    border-color: rgba(97,117,137,0.85);
+  }
+
+
+  #teaching { scroll-margin-top: 5rem; }
+  html { scroll-behavior: smooth; }
+
+  .cat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .cat-grid img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;   /* makes them nice tiles; remove if you want original ratios */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+
+  .happy-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* always 2 per row */
+    gap: 0.8rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 520px){
+    .happy-grid{
+      grid-template-columns: 1fr; /* 1 per row on small phones */
+    }
+  }
+
+
+    .happy-item img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .happy-item figcaption{
+      margin-top: 0.35rem;
+      font-size: 11pt;
+      letter-spacing: 0.1pt;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+
+  @media (max-width: 520px){
+    .two-video-grid{ grid-template-columns: 1fr !important; }
+  }
+
+
+
+</style>
+
+
+
+
+<style>
+  .portrait-hero {
+    width: 212px !important;
+    min-width: 212px !important;
+    height: 280px !important;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  /* Full-bleed intro section + positioning tweaks */
+  .home-intro {
+    /* 3cm higher */
+    margin-top: -2.4cm;
+
+    /* span full viewport width even inside <main> */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+   column-gap: 1cm;
+
+    /* paragraph left edge = 1.5cm from page edge */
+    padding-left: 1.5cm;
+
+    /* keep some right padding on mobile */
+    padding-right: 1.5 cm;
+
+    .research-text {
+      letter-spacing: 0.2pt;
+    }
+  }
+
+  /* On wide screens, shift portrait ~1cm to the right */
+  @media (min-width: 1024px) {
+    .home-intro {
+      padding-right: 2.0cm; /* 1cm less than 1.5cm */
+    }
+  }
+</style>
+
+
+  </head>
+
+<body class="text-black duration-200 ease-out bg-[var(--bg)] dark:text-white">
+  
+<header class="bg-[var(--header)] fixed top-0 z-40 mx-auto min-h-[3.25rem] w-full">
+  <div class="mx-auto w-full max-w-4xl p-2.5 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center min-h-8">
+        <a title="Go to home page" accesskey="!"
+          href="https://zhangcheney.github.io/" class="font-medium" style="display:flex; align-items:center; gap:12px; font-size:1.0rem;
+          --title-shift: calc(-1 * clamp(0px, calc((100vw - 62rem)/2), 2cm));
+          transform: translateX(var(--title-shift));">
+          <img src="/icons/cheneyicon_colored.svg" alt="Logo" style="height: 32px; width: 32px;">Home</a>
+        <button type="button" title="Switch color scheme" accesskey="$"
+          onclick="window.linkita.toggleDarkMode();" ondblclick="window.linkita.resetDarkMode();"
+          class="btn-dark h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover dark:invert [background-image:var(--url-dark)] dark:[background-image:var(--url-light)]"
+                  style="position: absolute; right: 15rem;"
+          style="--url-light: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' \
+            fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-sun\' \
+            ><circle cx=\'12\' cy=\'12\' r=\'5\'></circle><line x1=\'12\' y1=\'1\' x2=\'12\' y2=\'3\'></line><line x1=\'12\' y1=\'21\' x2=\'12\' y2=\'23\' \
+            ></line><line x1=\'4.22\' y1=\'4.22\' x2=\'5.64\' y2=\'5.64\'></line><line x1=\'18.36\' y1=\'18.36\' x2=\'19.78\' y2=\'19.78\'></line><line \
+            x1=\'1\' y1=\'12\' x2=\'3\' y2=\'12\'></line><line x1=\'21\' y1=\'12\' x2=\'23\' y2=\'12\'></line><line x1=\'4.22\' y1=\'19.78\' x2=\'5.64\' \
+            y2=\'18.36\'></line><line x1=\'18.36\' y1=\'5.64\' x2=\'19.78\' y2=\'4.22\'></line></svg>'); --url-dark: url('data:image/svg+xml;utf8,<svg \
+            xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' \
+            stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-moon\'><path d=\'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\'></path></svg>');"
+        ></button>
+      </div>
+      
+      <div title="Menu" role="button" accesskey="+" tabindex="0"
+  class="menu-trigger relative z-50 flex h-8 shrink-0 cursor-pointer items-center gap-2 lg:hidden"
+  onclick="window.linkita.toggleHeaderMenu();"
+  onkeydown="(event.keyCode == 13 || event.keyCode == 32) ? event.preventDefault() || window.linkita.toggleHeaderMenu() : true;"
+>
+
+<span class="font-medium leading-none select-none" style="font-size: 1.0rem;">Menu</span>
+
+  <!-- keep the original hamburger icon element + styling -->
+  <div aria-hidden="true"
+    class="btn-menu flex h-8 w-8 shrink-0 flex-col items-center justify-center gap-2.5"
+  ></div>
+</div>
+      
+    </div>
+    
+    <nav class="flex w-full items-center lg:w-auto" style="position: static;">
+      <style>
+        @media (min-width: 1024px) {
+          header nav {
+            position: absolute;
+            left: calc(50% - 5cm);
+            transform: translateX(-40%);
+          }
+        }
+      </style>
+      <menu
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0">
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/research/">Research</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/publications/">Publications</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/projects/">Projects</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/#teaching">Teaching</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/music/">Music</a>
+        </li>
+      </menu>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+  <!-- Body Start inject -->
+  
+
+
+
+<!-- Top video on homepage -->
+<div
+  class="relative"
+  style="
+    margin: 0;
+    padding: 0;
+    width: 1092px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 0;
+  "
+>
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    style="
+      display: block;
+      width: 1092px;
+      height: 420px;
+      max-width: none;
+      max-height: none;
+      object-fit: cover;
+      margin: 0;
+      border-radius: 0;
+    "
+  >
+    <source src="https://zhangcheney.github.io/videos/intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay layer: put text here later -->
+<div
+      style="
+        position: absolute;
+        left: 1.5cm;
+        top: 3.2cm;
+        color: rgb(243, 251, 255);
+      "
+    >
+      <!-- First line: big heavy title -->
+      <div
+        style="
+          font-size: 36pt;
+          line-height: 1.2;
+          font-weight: 800;
+          margin: 0;
+        "
+      >
+        Hi there, I am Chenyu<br>
+        Zhang
+      </div>
+
+      <!-- Second block: 2 cm below -->
+      <div
+        style="
+          margin-top: 1.5cm;
+          font-size: 12pt;
+          line-height: 1.8;
+          max-width: 48rem;
+        "
+      >
+        I’m pursuing an M.S. in Mechanical Engineering at
+        <a
+          href="https://www.engineering.cornell.edu/mae/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: underline; color: inherit;"
+        >
+          Cornell MAE</a>,
+        focusing on robotics and fluid dynamics.<br>
+        I’m fortunate to be advised by
+        <a
+          href="https://www.engineering.cornell.edu/people/elizabeth-farrell-helbling/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: underline; color: inherit;"
+        >
+          Dr. E Farrell Helbling</a> on insect-sized flapping-wing robot, and to receive guidance from
+        <a
+          href="https://physics.cornell.edu/z-jane-wang"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: underline; color: inherit;"
+        >
+          Dr. Z Jane Wang</a> on experimental flapping-wing physics at centimeter-scale.
+      </div>
+    </div>
+  <!-- End of overlay -->
+
+</div>
+  
+
+
+  <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-4rem)]
+    max-w-3xl break-words px-4 pb-12 pt-28 lg:pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg">
+      <div id="linkita-search-wrapper" class="hidden">
+  <ul id="linkita-search-results"></ul>
+</div>
+
+    <!-- Research intro + portrait layout -->
+    <section class="home-intro flex flex-col-reverse gap-6 lg:flex-row lg:items-start lg:gap-12">
+
+      <!-- Research paragraph: left on desktop, below portrait on mobile -->
+      <div class="lg:w-2/3">
+        <p class="mb-2 text-xs font-regular tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+          R E S E A R C H
+        </p>
+        <p class="text-base leading-relaxed research-text">
+          My interests lie in bio-inspired robots and unsteady fluid dynamics, building
+          flapping-wing vehicles to understand how animals harness surrounding flows, and
+          translating those principles into agile micro-aerial-vehicles (MAVs).
+        </p>
+
+        <p class="mt-16 mb-2 text-xs font-regular tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+          V I S I O N
+        </p>
+        <p class="text-base leading-relaxed research-text">
+          Going forward, empowered by learning-based control (RL) and microsystems, I aim to
+          achieve autonomous flight of bio-inspired robots, leveraging them as non-intrusive
+          instruments for ecological studies, embodied navigation tool indoors, and explore a
+          new paradigm of human-drone interaction.
+        </p>
+
+      </div>
+
+      <!-- Portrait + contact: right on desktop, top on mobile -->
+      <aside class="flex flex-col items-start lg:items-end lg:w-1/3">
+        <img
+          src="https://zhangcheney.github.io/images/my_portrait.png"
+          alt="Portrait"
+          class="portrait-hero mb-3"
+        >
+
+        <div
+          style="
+            position: relative;
+            top: -0.5cm;              /* moves Ithaca + everything below it together */
+            font-size: 12pt;
+            color: rgb(97, 117, 137);
+            line-height: 2.0;
+          "
+        >
+          <div>M.S. Student at Cornell MAE
+        </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true" style="color: inherit;"></i>
+            <span>Ithaca, NY, US</span>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:cz547@cornell.edu"
+               style="color: rgb(97,117,137); text-decoration: none; font-weight: 400;">
+              Email
+            </a>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
+            <a 
+              href="https://scholar.google.com/citations?user=oP9E2XcAAAAJ&hl=en&authuser=1"
+               target="_blank" rel="noopener noreferrer"
+               style="color: rgb(97,117,137); text-decoration: none; font-weight: 400;">
+              Google Scholar
+            </a>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+
+    <!-- Divider + Education section (full-bleed, left aligned) -->
+    <section
+      style="
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+      "
+    >
+      <!-- shallow separator line: 3cm shorter than viewport -->
+      <hr
+        style="
+          border: 0;
+          border-top: 1px solid rgba(120, 120, 120, 0.25);
+          width: calc(70%);
+          margin: 1.2rem 0 1.2rem 0;
+        "
+      >
+
+      <p class="mb-3 text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+        Education
+      </p>
+
+      <ul class="m-0 list-disc pl-4 text-base leading-relaxed research-text">
+        <li>M.S. student in MechE (minor in Applied Physics), Cornell University, 2024 - Now</li>
+        <li>M.Eng. in Electronic Engineering, Tsinghua University, 2024</li>
+        <li>Dual B.Eng. in Automation &amp; B.A. in Product Design, Tsinghua University, 2021</li>
+      </ul>
+    </section>
+
+
+    <!-- Divider + Education section (full-bleed, left aligned) -->
+    <section
+      style="
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+      "
+    >
+      <!-- shallow separator line: 3cm shorter than viewport -->
+      <hr
+        style="
+          border: 0;
+          border-top: 1px solid rgba(120, 120, 120, 0.25);
+          width: calc(70%);
+          margin: 3.2rem 0 1.2rem 0;
+        "
+      >
+
+      <p class="mb-3 text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+        Selected Awards
+      </p>
+
+      <ul class="m-0 list-disc pl-4 text-base leading-relaxed research-text">
+        <li>Enterprise Practice Excellence Award ($1400), Tsinghua University (Top 3%), 2024</li>
+        <li><a
+            href="https://drive.google.com/file/d/1yrqTkeX9QCpBVokqkeg_PFPCSa-mq96-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style=" color: inherit;"
+          >[Link]</a> IEEE IROS Student Travel Grant, 2023</li>
+        <li><a
+            href="https://drive.google.com/file/d/1KcNHeK64vot3ZwxvFy-M1cdoPb1KBDqI/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style=" color: inherit;"
+          >[Link]</a> Research Grant ($7800) for Undergraduate Overseas Summer Research (Top 2%), 2020</li>
+      </ul>
+    </section>
+
+   <section
+
+      id="teaching"
+
+      style="
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+      "
+    >
+      <!-- shallow separator line: 3cm shorter than viewport -->
+      <hr
+        style="
+          border: 0;
+          border-top: 1px solid rgba(120, 120, 120, 0.25);
+          width: calc(70%);
+          margin: 3.2rem 0 1.2rem 0;
+        "
+      >
+
+      <p class="mb-3 text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+          Teaching
+        </p>
+
+        <p class="m-0 text-base leading-relaxed research-text">
+          <span style="font-weight: 600; color: inherit;">
+            ECE 4160/5160: Fast Robots (Spring 2025)
+          </span>
+          <br>
+          <span style="display: inline-block; margin-top: 0.45rem;">
+            Teaching Assistant for lab-based graduate-level robotics course, implementing foundational control and navigation methods on a real robot car; covering Arduino coding, hardware building, and debugging.
+          </span>
+        </p>
+
+        <!-- clickable icon (next line) -->
+        <div style="margin-top: -0.5rem;">
+
+          <a
+            class="icon-btn"
+            href="https://github.com/FastRobotsCornell/FastRobots-2025/tree/main/docs/TeachingTeam"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Course"
+          >
+            <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+            <span>Course</span>
+          </a>
+
+        </div>
+    </section>
+
+
+   <section
+
+      id="mentee"
+
+      style="
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+      "
+    >
+      <!-- shallow separator line: 3cm shorter than viewport -->
+      <hr
+        style="
+          border: 0;
+          border-top: 1px solid rgba(120, 120, 120, 0.25);
+          width: calc(70%);
+          margin: 3.2rem 0 1.2rem 0;
+        "
+      >
+
+      <p class="mb-3 text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+          Mentee
+        </p>
+
+        <p class="m-0 text-base leading-relaxed research-text">
+          <span style="font-weight: 600; color: inherit;">
+            <a
+          href="https://correial.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: underline;"
+        >Lucca Correia</a> (Cornell ME '26)
+          </span>
+          <br>
+          <span style="display: inline-block; margin-top: 0.45rem;">
+            Guided and assisted the undergrad independent project: brainstorming the experiment setup, robot modification, and fabrication.
+          </span>
+        </p>
+
+    </section>
+
+
+    <section
+      style="
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+        margin-top: 1.2rem;
+      "
+    >
+      <hr
+        style="
+          border: 0;
+          border-top: 1px solid rgba(120, 120, 120, 0.25);
+          width: 70%;
+          margin: 3.2rem 0 1.2rem 0;
+        "
+      >
+
+      <p class="mb-3 text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 dark:text-neutral-400">
+        Personal
+      </p>
+
+      <p class="m-0 text-base leading-relaxed research-text">
+        Outside the lab, I enjoy woodcrafts, fossil hunting <i class="fas fa-hiking fa-fw" aria-hidden="true"></i>, and collecting exquisite designs and handicrafts <i class="fas fa-gift fa-fw" aria-hidden="true"></i>. I also play
+        percussion <i class="fas fa-drum fa-fw" aria-hidden="true"></i> and served as a percussionist and timpanist in <a
+          href="https://www.cuwinds.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: underline;"
+        >Cornell Wind Symphony</a> and <a
+          href="https://www.youtube.com/@tsinghuauniversitysymphoni7700"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: underline;"
+        >Tsinghua University Symphonic Band</a>. Discover our performance recordings in the 
+        <a
+          href="https://zhangcheney.github.io/pages/music/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: underline;"
+        >music</a> tab!
+      </p>
+
+      <p class="mt-4 text-base leading-relaxed research-text">
+        I also have a cat who shows higher research potential than me: she loves dissecting toys and investigating the tea
+        kettle. Some funny expressions:
+      </p>
+
+      <div class="cat-grid" style="margin-top: -1rem;">
+        <img src="https://zhangcheney.github.io/images/cat/expr1.png" alt="Cat expression 1">
+        <img src="https://zhangcheney.github.io/images/cat/expr2.png" alt="Cat expression 2">
+        <img src="https://zhangcheney.github.io/images/cat/expr3.png" alt="Cat expression 3">
+        <img src="https://zhangcheney.github.io/images/cat/expr4.png" alt="Cat expression 4">
+        <img src="https://zhangcheney.github.io/images/cat/expr5.png" alt="Cat expression 5">
+        <img src="https://zhangcheney.github.io/images/cat/expr6.png" alt="Cat expression 6">
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- Existing profile + page list below -->
+    
+
+<!-- Main Nav -->
+
+
+
+
+
+  </main>
+  <footer class="mx-auto flex lg:mt-5 max-w-3xl flex-wrap items-center px-8 py-3 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+  © <time datetime="2025">2025</time> Cheney Zhang
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <span class="mr-6 lg:ml-6">
+      Powered by <a
+      class="link" href="https://www.getzola.org/" target="_blank">Zola</a>
+    </span>
+    <a class="link" href="https://www.getzola.org/themes/linkita/" target="_blank">&#9998; Linkita</a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+  
+
+  <!-- Body End inject -->
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

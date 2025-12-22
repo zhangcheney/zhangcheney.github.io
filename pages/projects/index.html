@@ -1,0 +1,538 @@
+<!doctype html>
+<html class="not-ready overflow-y-scroll lg:text-base" lang="en">
+
+
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Zola" />
+  <title>Projects | Home</title>
+  <meta property="og:site_name" content="Home" />
+  <meta property="og:title" content="Projects" />
+  <meta name="description" content="My projects and work" />
+  <meta property="og:description" content="My projects and work" />
+  <meta property="og:url" content="https://zhangcheney.github.io/pages/projects/" />
+  <link rel="canonical" href="https://zhangcheney.github.io/pages/projects/" />
+  <meta property="og:type" content="article" />
+  <link rel="alternate" type="application/atom+xml" href="https://zhangcheney.github.io/atom.xml" title="Home | Atom" />
+
+  <meta name="theme-color" data-light="#e4e4e7" data-dark="#27272a" content="#e4e4e7" />
+  <link rel="preload stylesheet" as="style" href="https://zhangcheney.github.io/main.min.css?h=6307f37f300cb97b2b5a" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --header: #e4e4e7;
+      color-scheme: light;
+    }
+    :root.dark {
+      --bg: #18181b;
+      --header: #27272a;
+      color-scheme: dark;
+    }/**/
+  </style>
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="https://zhangcheney.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://zhangcheney.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="https://zhangcheney.github.io/android-icon.png" />
+  <script src="https://zhangcheney.github.io/js/linkita.min.js?h=2cfe69bc508021cbd3c5"></script>
+  <script src="https://zhangcheney.github.io/js/linkita-search.min.js?h=698547b4b081d012c661"></script>
+
+  <!-- Head inject -->
+  <link rel="stylesheet" href="/css/custom.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  referrerpolicy="no-referrer"
+/>
+
+
+
+<style>
+  .icon-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.45rem;
+    padding:0.35rem 0.6rem;
+    border:1px solid rgba(97,117,137,0.45);
+    border-radius:5px;
+    text-decoration:none;
+    color:inherit;
+    line-height:1;
+  }
+
+  .icon-btn i{
+    opacity: 0.8;          /* lighter icon */
+  }
+  .icon-btn span{
+    font-size: 11pt;        /* 2pt smaller than your 12pt text */
+  }
+
+  .icon-btn:hover{
+    border-color: rgba(97,117,137,0.85);
+  }
+
+
+  #teaching { scroll-margin-top: 5rem; }
+  html { scroll-behavior: smooth; }
+
+  .cat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .cat-grid img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;   /* makes them nice tiles; remove if you want original ratios */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+
+  .happy-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* always 2 per row */
+    gap: 0.8rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 520px){
+    .happy-grid{
+      grid-template-columns: 1fr; /* 1 per row on small phones */
+    }
+  }
+
+
+    .happy-item img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .happy-item figcaption{
+      margin-top: 0.35rem;
+      font-size: 11pt;
+      letter-spacing: 0.1pt;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+
+  @media (max-width: 520px){
+    .two-video-grid{ grid-template-columns: 1fr !important; }
+  }
+
+
+
+</style>
+
+
+
+
+<style>
+  .portrait-hero {
+    width: 212px !important;
+    min-width: 212px !important;
+    height: 280px !important;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  /* Full-bleed intro section + positioning tweaks */
+  .home-intro {
+    /* 3cm higher */
+    margin-top: -2.4cm;
+
+    /* span full viewport width even inside <main> */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+   column-gap: 1cm;
+
+    /* paragraph left edge = 1.5cm from page edge */
+    padding-left: 1.5cm;
+
+    /* keep some right padding on mobile */
+    padding-right: 1.5 cm;
+
+    .research-text {
+      letter-spacing: 0.2pt;
+    }
+  }
+
+  /* On wide screens, shift portrait ~1cm to the right */
+  @media (min-width: 1024px) {
+    .home-intro {
+      padding-right: 2.0cm; /* 1cm less than 1.5cm */
+    }
+  }
+</style>
+
+
+  </head>
+
+<body class="text-black duration-200 ease-out bg-[var(--bg)] dark:text-white">
+  
+<header class="bg-[var(--header)] fixed top-0 z-40 mx-auto min-h-[3.25rem] w-full">
+  <div class="mx-auto w-full max-w-4xl p-2.5 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center min-h-8">
+        <a title="Go to home page" accesskey="!"
+          href="https://zhangcheney.github.io/" class="font-medium" style="display:flex; align-items:center; gap:12px; font-size:1.0rem;
+          --title-shift: calc(-1 * clamp(0px, calc((100vw - 62rem)/2), 2cm));
+          transform: translateX(var(--title-shift));">
+          <img src="/icons/cheneyicon_colored.svg" alt="Logo" style="height: 32px; width: 32px;">Home</a>
+        <button type="button" title="Switch color scheme" accesskey="$"
+          onclick="window.linkita.toggleDarkMode();" ondblclick="window.linkita.resetDarkMode();"
+          class="btn-dark h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover dark:invert [background-image:var(--url-dark)] dark:[background-image:var(--url-light)]"
+                  style="position: absolute; right: 15rem;"
+          style="--url-light: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' \
+            fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-sun\' \
+            ><circle cx=\'12\' cy=\'12\' r=\'5\'></circle><line x1=\'12\' y1=\'1\' x2=\'12\' y2=\'3\'></line><line x1=\'12\' y1=\'21\' x2=\'12\' y2=\'23\' \
+            ></line><line x1=\'4.22\' y1=\'4.22\' x2=\'5.64\' y2=\'5.64\'></line><line x1=\'18.36\' y1=\'18.36\' x2=\'19.78\' y2=\'19.78\'></line><line \
+            x1=\'1\' y1=\'12\' x2=\'3\' y2=\'12\'></line><line x1=\'21\' y1=\'12\' x2=\'23\' y2=\'12\'></line><line x1=\'4.22\' y1=\'19.78\' x2=\'5.64\' \
+            y2=\'18.36\'></line><line x1=\'18.36\' y1=\'5.64\' x2=\'19.78\' y2=\'4.22\'></line></svg>'); --url-dark: url('data:image/svg+xml;utf8,<svg \
+            xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' \
+            stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-moon\'><path d=\'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\'></path></svg>');"
+        ></button>
+      </div>
+      
+      <div title="Menu" role="button" accesskey="+" tabindex="0"
+  class="menu-trigger relative z-50 flex h-8 shrink-0 cursor-pointer items-center gap-2 lg:hidden"
+  onclick="window.linkita.toggleHeaderMenu();"
+  onkeydown="(event.keyCode == 13 || event.keyCode == 32) ? event.preventDefault() || window.linkita.toggleHeaderMenu() : true;"
+>
+
+<span class="font-medium leading-none select-none" style="font-size: 1.0rem;">Menu</span>
+
+  <!-- keep the original hamburger icon element + styling -->
+  <div aria-hidden="true"
+    class="btn-menu flex h-8 w-8 shrink-0 flex-col items-center justify-center gap-2.5"
+  ></div>
+</div>
+      
+    </div>
+    
+    <nav class="flex w-full items-center lg:w-auto" style="position: static;">
+      <style>
+        @media (min-width: 1024px) {
+          header nav {
+            position: absolute;
+            left: calc(50% - 5cm);
+            transform: translateX(-40%);
+          }
+        }
+      </style>
+      <menu
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0">
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/research/">Research</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/publications/">Publications</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/projects/">Projects</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/#teaching">Teaching</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/music/">Music</a>
+        </li>
+      </menu>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+  <!-- Body Start inject -->
+  
+
+
+
+
+
+  <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-4rem)]
+    max-w-3xl break-words px-4 pb-12 pt-28 lg:pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg">
+      <div id="linkita-search-wrapper" class="hidden">
+  <ul id="linkita-search-results"></ul>
+</div>
+
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Projects</h1>
+    <!-- <div class="text-sm antialiased opacity-80"><span class="mx-1">&middot;</span><time
+    datetime="PT0H7M0S">7 min</time><span class="mx-1">&middot;</span><span>Chenyu Cheney Zhang</span>
+</div>
+ -->
+  </header>
+
+  <!-- TOC -->
+  <!-- 
+ -->
+
+  <!-- Content -->
+  <section><div style="font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7; margin-top: -4rem; margin-bottom: 1.8rem;">
+I treat microrobotic flight as a multidisciplinary problem, covering wing kinematics, fluid dynamics, and control alongside the robot structure. Accordingly, I’ve built a set of small projects that each target one link in that chain. These efforts help turn biological inspiration into robotic embodiment. I’m steadily building the toolkit needed to develop a coherent flying system eventually.
+</div>
+<hr />
+<div style="margin-top: 2.0rem; margin-bottom: 2.0rem; font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7;">
+  <!-- Title (optional) -->
+  <div style="font-size: 16pt; font-weight: 700; line-height: 1.25; margin-bottom: 0.8rem;">
+    Wingbeat model and visualization
+  </div>
+  <!-- One-column paragraph above -->
+  <div style="margin-bottom: 1.9rem;">
+    As an early preparation, I built a wing-kinematics model of RoboBee by reconstructing its typical wingbeat (stroke, pitch, and optionally deviation) and turning it into a clean visualization. The model is built in Mathematica and fully parametrized. Default parameters are from   <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/experimental-and-computational-studies-of-the-aerodynamic-performance-of-a-flapping-and-passively-rotating-insect-wing/CB42CECF017E2F4E346610D015105C24" target="_blank" rel="noopener noreferrer"
+     style="color: inherit; text-decoration: underline;">
+    this paper</a>. This serves as a reusable tool for different flapping patterns.
+  </div>
+  <!-- Two-column videos below -->
+  <div class="two-video-grid" style="width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.0rem; max-width: 640px;margin: 0 auto;">
+    <!-- Video 1 -->
+    <div style="background: #fff;">
+     <div style="border-radius: 0px; overflow: hidden; background: #fff; aspect-ratio: 1 / 1;display: flex;justify-content: center;">	
+      <video autoplay muted loop playsinline
+        style="width: 80%; aspect-ratio: 1 / 1; object-fit: contain; display: block; border-radius: 0px; background: #fff;">
+        <source src="/videos/flapping_pers.mp4" type="video/mp4">
+      </video>
+  </div>
+      <div style="margin-top: 0.35rem; font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.5rem;margin-bottom: 1rem;">
+        Simplified kinematics, perspective view
+      </div>
+    </div>
+    <!-- Video 2 -->
+    <div style="background: #fff;">
+     <div style="border-radius: 0px; overflow: hidden; background: #fff; aspect-ratio: 1 / 1;display: flex;justify-content: center;">	
+      <video autoplay muted loop playsinline
+        style="width: 80%; aspect-ratio: 1 / 1; object-fit: contain; display: block; border-radius: 0px; background: #fff;">
+        <source src="/videos/flapping_side.mp4" type="video/mp4">
+      </video>
+  </div>
+      <div style="margin-top: 0.35rem; font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.5rem;margin-bottom: 1rem;">
+        side view (unit: cm)
+      </div>
+    </div>
+  <!-- Mobile: stack into 1 column -->
+  <div style="height: 0;"></div>
+</div>
+<hr />
+<div style="margin-top: 2.0rem; margin-bottom: 2.0rem; font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7;">
+  <div style="font-size: 16pt; font-weight: 700; line-height: 1.25; margin-bottom: 0.8rem;">
+    2D FEM fluid solver
+  </div>
+  <div style="margin-bottom: 0.0rem;">
+    Finite methods have been widely used for fluid-structure-interaction simulation, serving as a high-fidelity tool for studying the vortex structure in flapping flight. I took an advanced course: <a href="https://classes.cornell.edu/browse/roster/SP25/class/MAE/7400"
+       target="_blank" rel="noopener noreferrer"
+       style="color: inherit; text-decoration: underline;">
+      FEM for FSI</a> and implemented a 2D fluid solver based on FEM (CG) with SUPG stabilization. The solver is validated with a classic lid-driven cavity flow benchmark.
+    <a href="https://drive.google.com/file/d/1T3ROrEMV17ggU3LQGmM0HnvvRIqj0yOr/view?usp=drive_link"
+       target="_blank" rel="noopener noreferrer"
+       style="color: inherit; text-decoration: underline;">
+      Report
+    </a>
+  </div>
+  <!-- Two images side-by-side -->
+  <div class="two-video-grid"
+    style="width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.0rem; max-width: 640px; margin: 0 auto;">
+    <!-- Image 1 -->
+    <div>
+      <div style="overflow: hidden; border-radius: 0px;">
+        <img
+          src="/images/myfemplot.png"
+          alt="Streamline plot of fully-developed flow field by our solver"
+          style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 0px;"
+        >
+      </div>
+      <div style="font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top:-1.0rem;">
+        The streamline plot of fully-developed <br> flow field by our solver
+      </div>
+    </div>
+    <!-- Image 2 -->
+    <div>
+      <div style="overflow: hidden; border-radius: 0px;">
+        <img
+          src="/images/comsolplot.png"
+          alt="Benchmark streamline plot from commercial software"
+          style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 0px;"
+        >
+      </div>
+      <div style="font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.0rem;">
+        The benchmark streamline plot <br> by 
+          <a href="https://www.comsol.com/blogs/how-to-solve-a-classic-cfd-benchmark-the-lid-driven-cavity-problem"
+       target="_blank" rel="noopener noreferrer"
+       style="color: inherit; text-decoration: underline;">
+      commercial software</a>.
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<!-- ========Play Magnets!============== -->
+<div style="margin-top: 2.4rem; margin-bottom: 2.4rem; font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7;">
+  <!-- Big title -->
+  <div style="font-size: 16pt; font-weight: 800; line-height: 1.2; margin-bottom: 0.9rem;">
+    PLAY MAGNETS!
+  </div>
+  <!-- Big project intro (optional) -->
+  <div style="margin-bottom: 1.2rem;">
+    <em>Play Magnets!</em> is a collection of small magnetic “sketches” I've developed, refined, or stumbled upon. Magnetism is rich in interesting, sometimes counter-intuitive behavior, and its contactless nature makes it a powerful tool for precise control at insect scale. Feel free to formalize the theoretical models and make them generalizable!
+  </div>
+  <!-- ---------- Sub-project 1 ---------- -->
+  <div style="margin-top: 2.0rem; margin-bottom: 0.4rem;">
+    <div style="font-size: 14pt; font-weight: 700; line-height: 1.25; margin-bottom: 0.6rem;">
+      1) One-DoF magnetic setup for fruitfly steering study
+    </div>
+    <div style="margin-bottom: 0.0rem;">
+      To facilitate the steering study, I optimized and engineered a magnetic setup to "tether" the fly onto a pin. It permits only 1 DoF yaw-steering, decoupling the yaw-motion from the fly's complex flight maneuvers, making it possible to investigate the turning mechanism.  
+      <a href="https://docs.google.com/presentation/d/117qeWRGAtzfbmIk-A1J5eWGO9bPqnFEi/edit?usp=drive_link&ouid=114511944516284035924&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+        Report
+      </a>
+    </div>
+    <!-- Two videos (use if you need a side-by-side comparison) -->
+    <div class="two-video-grid"
+      style="width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; max-width: 640px; margin: 0 auto;">  
+      <div>
+        <div style="overflow: hidden; border-radius: 0px;">
+          <video controls playsinline preload="metadata"
+            style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 0px;">
+            <source src="/videos/fruitfly_light.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.0rem;">
+          Light-induced steering (side view)
+        </div>
+      </div>
+      <div>
+        <div style="overflow: hidden; border-radius: 0px;">
+          <video controls playsinline preload="metadata"
+            style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 0px;">
+            <source src="/videos/fruitfly_finger.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.0rem;">
+          Finger motion-induced steering (top view)
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------- Sub-project 2 ---------- -->
+  <div style="margin-top: 3.0rem; margin-bottom: 1.6rem;">
+    <div style="font-size: 14pt; font-weight: 700; line-height: 1.25; margin-bottom: 0.6rem;">
+      2) Magnetic levitation rail for lab experiments
+    </div>
+    <div style="margin-bottom: 0.0rem;">
+      (Small Invention, Spring 2025) Possibly the first non-electromagnetic, room-temperature magnetic levitation track that is deployable in principle. Compared to existing 
+      <a href="https://en.wikipedia.org/wiki/Diamagnetism" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+        diamagnetic</a>-based systems, it suppresses vertical oscillation, and can be extended to arbitrary length, both make it practical.
+    </div>
+    <!-- Single video (no white background) -->
+    <div style="max-width: 640px; margin: 0 auto;">
+      <div style="overflow: hidden; border-radius: 0px;">
+        <video autoplay muted loop playsinline
+          style="width: 100%; height: auto; display: block; object-fit: contain; border-radius: 0px;">
+          <source src="/videos/magrail.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div style="font-size: 11pt; line-height: 1.4; text-align: center; opacity: 0.9; margin-top: -1.0rem; margin-bottom: -1rem;">
+        The prototype of the magnetic levitation rail (original speed). <br>The modular design allows it to be extended to arbitrary length.
+      </div>
+    </div>
+  </div>
+    <div style="margin-bottom: 0.9rem;">
+    Currently it is used for our flapping-wing water test, where the robot suffers from the lateral drifting when moving forward. The rail can constrain the drift ≤ 0.5 mm.
+    </div>
+</div>
+</section>
+  <hr />
+  <!-- Post Taxonomies -->
+  
+
+  <!-- Post Nav -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+
+
+
+
+  </main>
+  <footer class="mx-auto flex lg:mt-5 max-w-3xl flex-wrap items-center px-8 py-3 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+  © <time datetime="2025">2025</time> Cheney Zhang
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <span class="mr-6 lg:ml-6">
+      Powered by <a
+      class="link" href="https://www.getzola.org/" target="_blank">Zola</a>
+    </span>
+    <a class="link" href="https://www.getzola.org/themes/linkita/" target="_blank">&#9998; Linkita</a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+  
+
+  <!-- Body End inject -->
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

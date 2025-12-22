@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="not-ready overflow-y-scroll lg:text-base" lang="en">
+
+
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Zola" />
+  <title>Home</title>
+  <meta property="og:site_name" content="Home" />
+  <meta property="og:title" content="Home" />
+  <meta name="description" content="Cheney&apos;s personal website" />
+  <meta property="og:description" content="Cheney&apos;s personal website" />
+  <meta property="og:url" content="https://zhangcheney.github.io/pages/music/" />
+  <link rel="canonical" href="https://zhangcheney.github.io/pages/music/" />
+  <meta property="og:type" content="article" />
+  <link rel="alternate" type="application/atom+xml" href="https://zhangcheney.github.io/atom.xml" title="Home | Atom" />
+
+  <meta name="theme-color" data-light="#e4e4e7" data-dark="#27272a" content="#e4e4e7" />
+  <link rel="preload stylesheet" as="style" href="https://zhangcheney.github.io/main.min.css?h=6307f37f300cb97b2b5a" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --header: #e4e4e7;
+      color-scheme: light;
+    }
+    :root.dark {
+      --bg: #18181b;
+      --header: #27272a;
+      color-scheme: dark;
+    }/**/
+  </style>
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="https://zhangcheney.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://zhangcheney.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="https://zhangcheney.github.io/android-icon.png" />
+  <script src="https://zhangcheney.github.io/js/linkita.min.js?h=2cfe69bc508021cbd3c5"></script>
+  <script src="https://zhangcheney.github.io/js/linkita-search.min.js?h=698547b4b081d012c661"></script>
+
+  <!-- Head inject -->
+  <link rel="stylesheet" href="/css/custom.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  referrerpolicy="no-referrer"
+/>
+
+
+
+<style>
+  .icon-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.45rem;
+    padding:0.35rem 0.6rem;
+    border:1px solid rgba(97,117,137,0.45);
+    border-radius:5px;
+    text-decoration:none;
+    color:inherit;
+    line-height:1;
+  }
+
+  .icon-btn i{
+    opacity: 0.8;          /* lighter icon */
+  }
+  .icon-btn span{
+    font-size: 11pt;        /* 2pt smaller than your 12pt text */
+  }
+
+  .icon-btn:hover{
+    border-color: rgba(97,117,137,0.85);
+  }
+
+
+  #teaching { scroll-margin-top: 5rem; }
+  html { scroll-behavior: smooth; }
+
+  .cat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .cat-grid img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;   /* makes them nice tiles; remove if you want original ratios */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+
+  .happy-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* always 2 per row */
+    gap: 0.8rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 520px){
+    .happy-grid{
+      grid-template-columns: 1fr; /* 1 per row on small phones */
+    }
+  }
+
+
+    .happy-item img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .happy-item figcaption{
+      margin-top: 0.35rem;
+      font-size: 11pt;
+      letter-spacing: 0.1pt;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+
+  @media (max-width: 520px){
+    .two-video-grid{ grid-template-columns: 1fr !important; }
+  }
+
+
+
+</style>
+
+
+
+
+<style>
+  .portrait-hero {
+    width: 212px !important;
+    min-width: 212px !important;
+    height: 280px !important;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  /* Full-bleed intro section + positioning tweaks */
+  .home-intro {
+    /* 3cm higher */
+    margin-top: -2.4cm;
+
+    /* span full viewport width even inside <main> */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+   column-gap: 1cm;
+
+    /* paragraph left edge = 1.5cm from page edge */
+    padding-left: 1.5cm;
+
+    /* keep some right padding on mobile */
+    padding-right: 1.5 cm;
+
+    .research-text {
+      letter-spacing: 0.2pt;
+    }
+  }
+
+  /* On wide screens, shift portrait ~1cm to the right */
+  @media (min-width: 1024px) {
+    .home-intro {
+      padding-right: 2.0cm; /* 1cm less than 1.5cm */
+    }
+  }
+</style>
+
+
+  </head>
+
+<body class="text-black duration-200 ease-out bg-[var(--bg)] dark:text-white">
+  
+<header class="bg-[var(--header)] fixed top-0 z-40 mx-auto min-h-[3.25rem] w-full">
+  <div class="mx-auto w-full max-w-4xl p-2.5 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center min-h-8">
+        <a title="Go to home page" accesskey="!"
+          href="https://zhangcheney.github.io/" class="font-medium" style="display:flex; align-items:center; gap:12px; font-size:1.0rem;
+          --title-shift: calc(-1 * clamp(0px, calc((100vw - 62rem)/2), 2cm));
+          transform: translateX(var(--title-shift));">
+          <img src="/icons/cheneyicon_colored.svg" alt="Logo" style="height: 32px; width: 32px;">Home</a>
+        <button type="button" title="Switch color scheme" accesskey="$"
+          onclick="window.linkita.toggleDarkMode();" ondblclick="window.linkita.resetDarkMode();"
+          class="btn-dark h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover dark:invert [background-image:var(--url-dark)] dark:[background-image:var(--url-light)]"
+                  style="position: absolute; right: 15rem;"
+          style="--url-light: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' \
+            fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-sun\' \
+            ><circle cx=\'12\' cy=\'12\' r=\'5\'></circle><line x1=\'12\' y1=\'1\' x2=\'12\' y2=\'3\'></line><line x1=\'12\' y1=\'21\' x2=\'12\' y2=\'23\' \
+            ></line><line x1=\'4.22\' y1=\'4.22\' x2=\'5.64\' y2=\'5.64\'></line><line x1=\'18.36\' y1=\'18.36\' x2=\'19.78\' y2=\'19.78\'></line><line \
+            x1=\'1\' y1=\'12\' x2=\'3\' y2=\'12\'></line><line x1=\'21\' y1=\'12\' x2=\'23\' y2=\'12\'></line><line x1=\'4.22\' y1=\'19.78\' x2=\'5.64\' \
+            y2=\'18.36\'></line><line x1=\'18.36\' y1=\'5.64\' x2=\'19.78\' y2=\'4.22\'></line></svg>'); --url-dark: url('data:image/svg+xml;utf8,<svg \
+            xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' \
+            stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-moon\'><path d=\'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\'></path></svg>');"
+        ></button>
+      </div>
+      
+      <div title="Menu" role="button" accesskey="+" tabindex="0"
+  class="menu-trigger relative z-50 flex h-8 shrink-0 cursor-pointer items-center gap-2 lg:hidden"
+  onclick="window.linkita.toggleHeaderMenu();"
+  onkeydown="(event.keyCode == 13 || event.keyCode == 32) ? event.preventDefault() || window.linkita.toggleHeaderMenu() : true;"
+>
+
+<span class="font-medium leading-none select-none" style="font-size: 1.0rem;">Menu</span>
+
+  <!-- keep the original hamburger icon element + styling -->
+  <div aria-hidden="true"
+    class="btn-menu flex h-8 w-8 shrink-0 flex-col items-center justify-center gap-2.5"
+  ></div>
+</div>
+      
+    </div>
+    
+    <nav class="flex w-full items-center lg:w-auto" style="position: static;">
+      <style>
+        @media (min-width: 1024px) {
+          header nav {
+            position: absolute;
+            left: calc(50% - 5cm);
+            transform: translateX(-40%);
+          }
+        }
+      </style>
+      <menu
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0">
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/research/">Research</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/publications/">Publications</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/projects/">Projects</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/#teaching">Teaching</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center font-medium lg:px-3 lg:py-0"
+            style="font-size: 1.0rem; padding-left: 1.1rem; padding-right: 1.1rem;"
+            href="https://zhangcheney.github.io/pages/music/">Music</a>
+        </li>
+      </menu>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+  <!-- Body Start inject -->
+  
+
+
+
+
+
+  <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-4rem)]
+    max-w-3xl break-words px-4 pb-12 pt-28 lg:pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg">
+      <div id="linkita-search-wrapper" class="hidden">
+  <ul id="linkita-search-results"></ul>
+</div>
+
+
+<!-- Full-bleed hero image at top -->
+<div
+  class="relative"
+  style="
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+    margin-top: -2.4cm;
+    margin-bottom: -6rem;
+    overflow: hidden;
+  "
+>
+  <img
+    src="https://zhangcheney.github.io/images/music/band0.jpg"
+    alt="Music hero image"
+    style="
+      display: block;
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+    "
+  >
+
+  <!-- Overlay layer -->
+  <div style="position: absolute; inset: 0; pointer-events: none;">
+    <div
+      style="
+        position: absolute;
+        left: 1.5cm;
+        top: 9cm;
+        color: rgb(243, 251, 255);
+        font-size: 36pt;
+        line-height: 1.2;
+        font-weight: 800;
+      "
+    >
+      Music
+    </div>
+  </div>
+</div>
+<!-- IMPORTANT: hero div ends here. Everything below stays centered normally. -->
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0"></h1>
+  </header>
+
+  <section><div style="font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7; margin-bottom: 1.5rem;">
+I’ve spent over 10 years studying and playing percussion, technically a kind of high-precision real-time control task for human (and for sure, a bit more than that). I've served as a percussionist and timpanist in Cornell Wind Symphony, after spending more than five years in the Tsinghua University Symphonic Band. Playing alongside other musicians, I love how we connect and shape the sound into a musical atmosphere, whether bright, dreamy, or grande.
+</div>
+<div style="font-size: 12pt; letter-spacing: 0.2pt; line-height: 1.7; margin-bottom: 3.0rem;">
+Discover a few moments from my favorite performances!
+</div>
+<div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+  <iframe
+    width="100%"
+    height="405"
+    src="https://www.youtube.com/embed/x1eRVAJinho"
+    title="Give Us This Day – Tsinghua University Symphonic Band"
+    frameborder="0"
+    style="max-width: 720px; display: block; margin: 0 auto; border-radius: 10px;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <!-- Title + meta -->
+  <div style="max-width: 720px; margin: 0.75rem auto 0.25rem auto; font-size: 13pt; letter-spacing: 0.2pt;">
+    <strong>Give Us This Day</strong>
+  </div>
+  <div style="max-width: 720px; margin: 0 auto 0.75rem auto; font-size: 11pt; letter-spacing: 0.2pt; line-height: 1.7;">
+    composed by Dr. David Maslanka<br>
+    performed by Tsinghua University Symphonic Band<br>
+    (find me at the back left corner!)
+  </div>
+  <!-- Program note -->
+  <div style="max-width: 720px; margin: 0 auto; font-size: 9pt; letter-spacing: 0.2pt; line-height: 1.5;">
+    Music makes the
+    connection to reality, and by reality I mean a true awakeness and awareness. “Give Us This Day”
+    gives us this very moment of awakeness and aware aliveness so that we can build a future in the
+    face of a most dangerous and difficult time... The music of the first movement is deeply
+    searching, while that of the highly energized second movement is at times both joyful and
+    sternly sober. The piece ends with a modal setting of the chorale melody
+    <em>Vater Unser in Himmelreich</em> (“Our Father in Heaven”), #110 from the
+    <em>371 Four-Part Chorales</em> by Johann Sebastian Bach.
+      <div style="max-width: 720px; margin: 0 auto 0.75rem auto; font-size: 9pt; letter-spacing: 0.2pt; line-height: 1.3; margin-top: 0.7rem; margin-bottom: 5.7rem;">
+    <em>– Program Note by composer</em>
+  </div>
+  </div>
+</div>
+<div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+  <iframe
+    width="100%"
+    height="405"
+    src="https://www.youtube.com/embed/M3pHlN7QUUc"
+    title="Performance recording"
+    frameborder="0"
+    style="max-width: 720px; display: block; margin: 0 auto; border-radius: 10px;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <!-- Title + meta -->
+  <div style="max-width: 720px; margin: 0.75rem auto 0.25rem auto; font-size: 13pt; letter-spacing: 0.2pt;">
+    <strong>Le Carnaval des Animaux (The Carnival of the Animals)</strong>
+  </div>
+  <div style="max-width: 720px; margin: 0 auto 0.75rem auto; font-size: 11pt; letter-spacing: 0.2pt; line-height: 1.7;">
+    composed by Saint-Saëns<br>
+    performed by Tsinghua University Symphonic Band<br>
+    (find me in the center of the back!)
+  </div>
+  <!-- Brief intro -->
+  <div style="max-width: 720px; margin: 0 auto; font-size: 9pt; letter-spacing: 0.2pt; line-height: 1.5;">
+    The Carnival of the Animals (1886) is a delightful, humorous musical “parade” of animal portraits. By quoting well-known music, the composer casts a playful, satirical light on musical clichés and concert traditions. In this performance we present six from its fourteen pieces.
+  </div>
+</div>
+<div style="margin-top: 2.5rem; margin-bottom: 1.5rem;">
+  <p style="margin: 0 0 0.75rem 0; font-size: 12pt; text-transform: uppercase; letter-spacing: 0.2em; margin-top: 4.5rem; color: rgb(120, 120, 120);">
+    Happy moments
+  </p>
+  <div class="happy-grid">
+    <figure class="happy-item">
+      <img src="/images/music/band8.jpg" alt="Happy moment 1">
+      <figcaption>Percussion group, 2019</figcaption>
+    </figure>
+  <figure class="happy-item">
+      <img src="/images/music/band2.jpg" alt="Happy moment 2">
+      <figcaption>New Year's Concert 2020</figcaption>
+    </figure>
+  <figure class="happy-item">
+      <img src="/images/music/band3.jpg" alt="Happy moment 3">
+      <figcaption>New Year's Concert 2018</figcaption>
+    </figure>
+  <figure class="happy-item">
+      <img src="/images/music/band4.jpg" alt="Happy moment 4">
+      <figcaption>With Prof. Timothy Saltzmann,<br> Director of UW Concert Bands, Dec. 2017</figcaption>
+    </figure>
+  <figure class="happy-item">
+      <img src="/images/music/band5.jpg" alt="Happy moment 2">
+      <figcaption>New Year's Concert 2018</figcaption>
+    </figure>
+  <figure class="happy-item">
+      <img src="/images/music/band7.jpg" alt="Happy moment 4">
+      <figcaption>Percussion group, Concert 2021</figcaption>
+    </figure>
+  </div>
+</div>
+</section>
+</article>
+
+
+
+
+
+
+  </main>
+  <footer class="mx-auto flex lg:mt-5 max-w-3xl flex-wrap items-center px-8 py-3 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+  © <time datetime="2025">2025</time> Cheney Zhang
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <span class="mr-6 lg:ml-6">
+      Powered by <a
+      class="link" href="https://www.getzola.org/" target="_blank">Zola</a>
+    </span>
+    <a class="link" href="https://www.getzola.org/themes/linkita/" target="_blank">&#9998; Linkita</a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+  
+
+  <!-- Body End inject -->
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

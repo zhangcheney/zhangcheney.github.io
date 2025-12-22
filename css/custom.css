@@ -1,0 +1,34 @@
+/* 1. Make header thicker */
+header {
+    min-height: 4rem !important;
+}
+
+header > div {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* 2. Change all header text color to RGB(97,117,137) */
+header,
+header a,
+header button {
+    color: rgb(97, 117, 137) !important;
+}
+
+.dark header,
+.dark header a,
+.dark header button {
+    color: rgb(97, 117, 137) !important;
+}
+
+/* 3. Decrease overall font size by 2pt */
+header {
+    font-size: 0.875rem;
+}
+
+/* Make sure the layout works on desktop */
+@media (min-width: 1024px) {
+    header > div {
+        position: relative;
+    }
+}
